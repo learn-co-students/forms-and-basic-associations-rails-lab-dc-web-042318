@@ -159,4 +159,27 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
+artist = Artist.create([
+  {name: "Bob Dylan"},
+  {name: "Rolling Stones"},
+  {name: "Pink Floyd"}
+])
+
+songs = Song.create([
+  {title: "Times They Are A Changin", genre_id: 1, artist_id: 1},
+  {title: "Paint it Black", genre_id: 10, artist_id: 3},
+  {title: "Wish You Were Here", genre_id: 15, artist_id: 3},
+])
+
+
+
+
+
+
+
+
+
+
+
+
 

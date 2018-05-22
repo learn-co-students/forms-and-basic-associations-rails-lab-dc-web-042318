@@ -10,5 +10,8 @@
       <%= content_tag :div, msg, class: name %>
     <% end -%>
     <%= yield %>
+    <hr>
+    <%= link_to "Artists", artists_path%><br>
+    <%= link_to "Songs", songs_path %>
   </body>
 </html>
